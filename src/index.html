@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meteorio - Get the best weather prediction</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.min.css"/>
+    <link rel="stylesheet" href="styles/main.css"/>
+</head>
+<body>
+   <!--Navbar--> 
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a href="#" class="navbar-brand">
+            METEORIO
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item mr-lg-2" >
+                    <a href="#" class="nav-link menu-item-link">
+                        <i class="far fa-address-card"></i> About
+                    </a>
+                </li>
+                <li class="nav-item mr-lg-2" >
+                        <a href="#" class="nav-link menu-item-link">
+                            <i class="far fa-id-badge"></i> Contact
+                        </a>
+                    </li>
+            </ul>
+        </div> 
+    </div>   
+</nav> 
+<!--Main-->
+<section role="main">
+    <div class="container">
+        <div class="main-search">
+            <form  class="form-inline justify-content-center" id="search-city-form" > 
+                <div class="form-group">
+                    <input type="text"  class="form-control form-control-lg" id="search-city-input" placeholder="Search Cities..." autofocus />
+                    <button type="submit" class="btn btn-primary btn-lg"> 
+                    <i class="fas fa-search-location"></i> Search
+                    </button>
+                   </div>
+            </form>
+        </div> 
+        <div class="d-flex justify-content-center my-5" id="weather"></div>
+        <div class="d-flex justify-content-center">
+            <a href="" class="btn btn-outline-primary" id="search-again-btn"> Search another city</a>
+        </div>
+    </div>
+</section>
+<!--  Bootstrap  -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!--Js -->
+<script src="js/main.js"></script>
+</body>
+</html>
